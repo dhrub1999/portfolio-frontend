@@ -1,7 +1,6 @@
-import { Inter, Roboto, Open_Sans } from "next/font/google";
+import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 const Roboto = Roboto({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -23,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Roboto.variable} ${Open_Sans.variable}`}>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
