@@ -1,13 +1,13 @@
 import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const Roboto = Roboto({
-  weight: ["400", "500", "600", "700", "800", "900"],
+const roboto = Roboto({
+  weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto",
 });
-const Open_Sans = Open_Sans({
+const openSans = Open_Sans({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${Roboto.variable} ${Open_Sans.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${openSans.variable}`}>
       <body>{children}</body>
     </html>
   );

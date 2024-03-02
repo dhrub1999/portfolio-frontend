@@ -1,5 +1,9 @@
-import Image from "next/image";
+import React from "react";
 
 export default function Home() {
-  return <h1>Hello</h1>;
+  return (
+    <main className="h-screen w-full grid justify-items-center content-center">
+      <h1>Portfolio</h1>
+    </main>
+  );
 }

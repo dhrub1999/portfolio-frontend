@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo-svg {
+  stroke: #000001;
+  stroke-width: 0.2;
+  fill: transparent;
+  stroke-dasharray: 352;
+  stroke-dashoffset: 1000;
+}
